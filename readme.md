@@ -1,0 +1,36 @@
+#AnimatedGraph
+
+### Purpose
+Animated Graph is a graph representation and visualization tool, made possible by Javascript and the canvas element.
+
+### Usage
+Include js files
+
+	<script src='lib/Graph.js' type='application/javascript'></script>
+	<script src='lib/ForceGraph.js' type='application/javascript'></script>
+	<script src='lib/ForceNode.js' type='application/javascript'></script>
+	<script src='lib/Physics.js' type='application/javascript'></script>
+	<script src='lib/Vector.js' type='application/javascript'></script>
+	<script src='lib/CanvasView.js' type='application/javascript'></script>
+	<script src='lib/AnimatedGraph.js' type='application/javascript'></script>
+
+Create graph
+
+	var ag = new AnimatedGraph();
+	ag.addEdge("A",2);
+	ag.addEdge("B","A");
+	ag.addEdge("B",2);
+
+Create and run visualization
+
+	document.getElementById('main').appendChild(ag.createView());
+	ag.run();
+
+
+### Final notes
+
+I have used hooke's and coulumb's laws to position the nodes, and the 4th order Runge-Kutta method to calculate approximate positions.
+
+The graph can contain any type of objects, the only requirement is that they specify the toString method, since this is used to identify nodes in the graph structure.
+
+The code is compatible with all the latest browsers (FF/Opera/Chrome/Safari) except IE, since it currently doesn't support canvas.

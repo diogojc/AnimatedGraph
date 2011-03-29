@@ -5,13 +5,14 @@
 <html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
 	<head>
 		<meta http-equiv='Content-Type' content='text/html;' charset=utf-8' />
-		<title>Animated Graph example</title>
+		<title>Example</title>
 		<link rel='stylesheet' type='text/css' href='style.css' />
 		<script src='lib/Graph.js' type='application/javascript'></script>
 		<script src='lib/ForceGraph.js' type='application/javascript'></script>
 		<script src='lib/ForceNode.js' type='application/javascript'></script>
 		<script src='lib/Physics.js' type='application/javascript'></script>
 		<script src='lib/Vector.js' type='application/javascript'></script>
+		<script src='lib/CanvasView.js' type='application/javascript'></script>
 		<script src='lib/AnimatedGraph.js' type='application/javascript'></script>
 	</head>
 
@@ -35,11 +36,7 @@
 			ag.addEdge(5,5);
 			ag.addEdge(6,8);
 			ag.addEdge(7,3);
-			var width=640;
-			var height=480;
-			ag.model.scatterNodes(width,height);
-			ag.createCanvas(width,height);
-			document.getElementById('main').appendChild(ag.canvas);
+			document.getElementById('main').appendChild(ag.createView());
 			ag.run();
 		</script>
 	</body>
