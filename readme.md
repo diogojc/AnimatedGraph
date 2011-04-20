@@ -21,10 +21,10 @@ Create graph
 	ag.addEdge("B","A");
 	ag.addEdge("B",2);
 
-Create and run visualization
+Show the graph
 
-	document.getElementById('main').appendChild(ag.createView());
-	ag.run();
+	document.getElementById('main').appendChild(ag.createCanvas('view1'));
+	document.getElementById('main').appendChild(ag.createCanvas('view2',300,300));
 
 
 ### Final notes
