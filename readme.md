@@ -33,4 +33,4 @@ I have used hooke's and coulumb's laws to position the nodes, and the 4th order 
 
 The graph can contain any type of objects, the only requirement is that they specify the toString method, since this is used to identify nodes in the graph structure.
 
-The code is compatible with all the latest browsers (FF/Opera/Chrome/Safari) except IE, since it currently doesn't support canvas.
+The code is compatible with all the latest browsers that support the canvas element.
