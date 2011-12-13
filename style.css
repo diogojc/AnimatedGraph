@@ -1,9 +1,19 @@
-canvas{
-	border:1px solid rgb(186,180,163);
+html, body, #view1{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	overflow: hidden;
 }
 
-#main{
-	margin-left:auto;
-	margin-right:auto;
-	text-align:center;
+#view2{
+	position: absolute;
+	left: 25px;
+	top: 25px;
+	width: 200px;
+	height: 200px;
+	margin: 0px;
+	border: 1px solid rgb(186,180,163);
+	padding: 0px;	
 }
