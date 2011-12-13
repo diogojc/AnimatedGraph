@@ -3,6 +3,9 @@
 ### Purpose
 Animated Graph is a graph representation and visualization tool, made possible by Javascript and the canvas element.
 
+### Preview
+![Preview](http://img707.imageshack.us/img707/5559/previewruw.png)
+
 ### Usage
 Include js files
 
@@ -12,7 +15,9 @@ Include js files
 	<script src='lib/Physics.js' type='application/javascript'></script>
 	<script src='lib/Vector.js' type='application/javascript'></script>
 	<script src='lib/CanvasView.js' type='application/javascript'></script>
+	<script src='lib/CanvasController.js' type='application/javascript'></script>
 	<script src='lib/AnimatedGraph.js' type='application/javascript'></script>
+	<script src='lib/Publisher.js' type='application/javascript'></script>
 
 Create graph
 
@@ -23,8 +28,8 @@ Create graph
 
 Show the graph
 
-	document.getElementById('main').appendChild(ag.createCanvas('view1'));
-	document.getElementById('main').appendChild(ag.createCanvas('view2',300,300));
+	document.body.appendChild(ag.createCanvas('view1'));
+	document.body.appendChild(ag.createCanvas('view2',300,300));
 
 
 ### Final notes
@@ -33,4 +38,4 @@ I have used hooke's and coulumb's laws to position the nodes, and the 4th order 
 
 The graph can contain any type of objects, the only requirement is that they specify the toString method, since this is used to identify nodes in the graph structure.
 
-The code is compatible with all the latest browsers that support the canvas element.
+The code should be compatible with all the latest browsers that support the canvas element.
