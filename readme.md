@@ -4,7 +4,7 @@
 Animated Graph is a graph representation and visualization tool, made possible by Javascript and the canvas element.
 
 ### Preview
-[Try it live](https://rawgit.com/diogojc/AnimatedGraph/master/index.html) and you should see something like this:
+[Try it live](https://cdn.rawgit.com/diogojc/AnimatedGraph/master/index.html) and you should see something like this:
 ![Preview](https://raw.githubusercontent.com/diogojc/AnimatedGraph/master/example.png)
 
 ### Usage
